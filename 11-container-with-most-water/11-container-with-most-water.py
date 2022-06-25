@@ -18,5 +18,5 @@ class Solution:
         
         return res
     
-# Time: O(n)
+# Time: O(1)
 # Space: O(n)
