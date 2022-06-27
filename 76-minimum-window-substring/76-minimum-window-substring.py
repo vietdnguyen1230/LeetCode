@@ -1,5 +1,7 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+# sliding window
+# hash table
         if t == "": return ""
         
         countT, window = {}, {}
