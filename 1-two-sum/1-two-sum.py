@@ -8,6 +8,5 @@ class Solution:
                 return [prevMap[diff], i]
             else:
                 prevMap[n] = i
-            
         
         return
