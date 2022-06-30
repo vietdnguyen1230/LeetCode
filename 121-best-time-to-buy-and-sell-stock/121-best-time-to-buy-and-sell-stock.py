@@ -1,16 +1,16 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-# set two pointers
-        l, r = 0, 0
-        maxProfit = 0
-# while within range
+        l, r = 0,0
+        res = 0
+        
         while r < len(prices):
             if prices[l] < prices[r]:
                 profit = prices[r] - prices[l]
-                maxProfit = max(maxProfit, profit)
-# move the pointers
+                res = max(profit, res)
+            
             else:
                 l = r
             r += 1
         
-        return maxProfit
+        return res
+            
