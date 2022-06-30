@@ -11,8 +11,10 @@ class Solution:
         have, need = 0, len(countT)
         res, resLen = [-1, -1], float("infinity")
         l = 0
+#  iterate through
         for r in range(len(s)):
             c = s[r]
+# update window
             window[c] = 1 + window.get(c, 0)
             
             if c in countT and window[c] == countT[c]:
