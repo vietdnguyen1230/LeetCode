@@ -4,7 +4,7 @@ class Solution:
 # hashset
 # Time O(n) Space O(n)
         stack = []
-        Map = { ")":"(", "]":"[", "}":"{" }
+        Map = { ")":"(", "]":"[", "}":"{"}
         
         for c in s:
             if c in Map:
