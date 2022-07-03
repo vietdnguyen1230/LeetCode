@@ -1,10 +1,10 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        l, r = 0, len(numbers) - 1
+        l,r = 0, len(numbers) - 1
+        res = []
         
-        while l < r:
+        for i in range(len(numbers)):
             curSum = numbers[l] + numbers[r]
-            
             if curSum > target:
                 r -= 1
             elif curSum < target:
@@ -12,5 +12,3 @@ class Solution:
             else:
                 return [l + 1, r + 1]
         
-                        
-        return []
