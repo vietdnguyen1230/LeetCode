@@ -14,7 +14,7 @@ class Solution:
                     return False
             else:
                 stack.append(c)
-        
         return True if not stack else False
+        
         
         
