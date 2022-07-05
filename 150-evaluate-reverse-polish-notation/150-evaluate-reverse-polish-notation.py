@@ -14,11 +14,11 @@ class Solution:
                 stack.append(b - a)
             elif c == "/":
                 a, b = stack.pop(), stack.pop()
-                stack.append(int(b / a))
+                stack.append(int(b/a))
             else:
                 stack.append(int(c))
-            
-        return stack[0]
+        
+        return stack[-1]
         
 
         
