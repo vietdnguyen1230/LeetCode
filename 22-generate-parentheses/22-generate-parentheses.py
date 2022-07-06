@@ -4,6 +4,7 @@ class Solution:
         res = []
         
         def backtrack(openN, closedN):
+# match number of n
             if openN == closedN == n:
                 res.append("".join(stack))
                 return
