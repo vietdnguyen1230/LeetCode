@@ -1,9 +1,9 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        if not height:
+        if not height: 
             return 0
-        
-        l, r = 0, len(height) - 1
+# 2 pointers
+        l,r = 0, len(height) - 1
         leftMax, rightMax = height[l], height[r]
         res = 0
         
@@ -16,5 +16,7 @@ class Solution:
                 r -= 1
                 rightMax = max(rightMax, height[r])
                 res += rightMax - height[r]
-            
+        
         return res
+    
+# Time: O(1)
