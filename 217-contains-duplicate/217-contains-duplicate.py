@@ -7,5 +7,4 @@ class Solution:
                 return True
             else:
                 hashSet.add(n)
-        
         return False
