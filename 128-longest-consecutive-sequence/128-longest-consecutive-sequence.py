@@ -12,3 +12,4 @@ class Solution:
                 longest = max(longest,length)
         
         return longest
+    
